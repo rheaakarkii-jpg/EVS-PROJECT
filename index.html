@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Drinking Water Safety Awareness Through Technology — CHE110 Environmental Chemistry project by LPU Group 13.">
+  <title>Drinking Water Safety | CHE110</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="progress-bar" id="progressBar"></div>
+
+  <header class="site-header" id="siteHeader">
+    <a class="brand" href="#home" aria-label="Drinking Water Safety home">
+      <span class="brand-drop">💧</span>
+      <span>
+        <strong>WaterSafe</strong>
+        <small>CHE110 • Group 13</small>
+      </span>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#explorer">Explore</a>
+      <a href="#lab">Water Lab</a>
+      <a href="#risks">Risks</a>
+      <a href="#campus">Campus</a>
+      <a href="#solutions">Solutions</a>
+      <a href="#research">Research</a>
+    </nav>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Open navigation" aria-expanded="false">☰</button>
+  </header>
+
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#explorer">Explore</a>
+    <a href="#lab">Water Lab</a>
+    <a href="#risks">Risks</a>
+    <a href="#campus">Campus</a>
+    <a href="#solutions">Solutions</a>
+    <a href="#research">Research</a>
+  </div>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-noise"></div>
+      <div class="hero-orbit orbit-one"></div>
+      <div class="hero-orbit orbit-two"></div>
+
+      <div class="hero-particles" aria-hidden="true">
+        <span style="--x:8%;--y:18%;--d:0s"></span>
+        <span style="--x:20%;--y:72%;--d:1s"></span>
+        <span style="--x:34%;--y:28%;--d:2.2s"></span>
+        <span style="--x:51%;--y:77%;--d:.6s"></span>
+        <span style="--x:70%;--y:24%;--d:1.8s"></span>
+        <span style="--x:87%;--y:68%;--d:2.8s"></span>
+        <span style="--x:93%;--y:15%;--d:1.2s"></span>
+      </div>
+
+      <div class="hero-content reveal">
+        <div class="eyebrow"><span></span> ENVIRONMENTAL CHEMISTRY • CHE110</div>
+        <h1>Every drop has a<br><em>story.</em></h1>
+        <p class="hero-lead">
+          Explore where drinking water comes from, what can make it unsafe,
+          and how simple technology and everyday habits can protect it.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#explorer">Enter the experience <span>↓</span></a>
+          <a class="btn btn-ghost" href="#research">View research</a>
+        </div>
+
+        <div class="hero-meta">
+          <span><b>01</b><strong>Global access</strong><small>Who has safe water?</small></span>
+          <span><b>02</b><strong>Water quality</strong><small>What makes water safe?</small></span>
+          <span><b>03</b><strong>Prevention</strong><small>How can we protect it?</small></span>
+        </div>
+      </div>
+
+      <div class="hero-water-card reveal delay-2" id="heroWaterCard">
+        <div class="water-card-glow"></div>
+        <div class="droplet">
+          <div class="droplet-inner">H<sup>2</sup>O</div>
+        </div>
+        <div class="hero-card-copy">
+          <span>THE MOLECULE THAT CONNECTS US</span>
+          <strong>Clean water is<br>more than hydration.</strong>
+          <small>It is health, dignity and resilience.</small>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#explorer">
+        <span>SCROLL TO EXPLORE</span>
+        <i>↓</i>
+      </a>
+    </section>
+
+    <!-- GLOBAL EXPLORER -->
+    <section class="section section-dark" id="explorer">
+      <div class="section-heading reveal">
+        <div>
+          <span class="section-kicker">01 / THE BIG PICTURE</span>
+          <h2>Water connects<br><em>the whole planet.</em></h2>
+        </div>
+        <p>
+          “Safely managed drinking water” is more than having a tap.
+          It means an improved source is accessible, available when needed,
+          and free from contamination.
+        </p>
+      </div>
+
+      <div class="global-layout">
+        <div class="world-panel reveal">
+          <div class="map-label">INTERACTIVE GLOBAL VIEW <span>• educational visualization</span></div>
+
+          <svg class="world-map" viewBox="0 0 900 430" role="img" aria-label="Stylized interactive world map">
+            <g class="continent" data-region="north-america">
+              <path d="M90 93 L140 62 L200 73 L235 105 L220 139 L180 147 L153 177 L119 158 L101 126 Z"/>
+              <circle cx="156" cy="111" r="7"/>
+            </g>
+            <g class="continent" data-region="south-america">
+              <path d="M260 190 L300 207 L314 246 L297 291 L270 350 L247 322 L251 277 L230 241 Z"/>
+              <circle cx="274" cy="240" r="7"/>
+            </g>
+            <g class="continent" data-region="europe">
+              <path d="M445 94 L487 79 L528 94 L537 117 L514 132 L478 125 L451 139 L432 119 Z"/>
+              <circle cx="484" cy="105" r="7"/>
+            </g>
+            <g class="continent" data-region="africa">
+              <path d="M456 151 L511 145 L548 177 L535 235 L507 291 L471 271 L445 218 L432 178 Z"/>
+              <circle cx="493" cy="184" r="7"/>
+            </g>
+            <g class="continent" data-region="asia">
+              <path d="M531 92 L606 71 L699 89 L755 123 L728 160 L677 171 L638 157 L594 180 L551 151 L512 128 Z"/>
+              <circle cx="624" cy="118" r="7"/>
+            </g>
+            <g class="continent" data-region="india">
+              <path d="M626 164 L654 174 L650 204 L631 224 L615 199 Z"/>
+              <circle cx="636" cy="187" r="9"/>
+            </g>
+            <g class="continent" data-region="oceania">
+              <path d="M707 277 L757 261 L811 281 L820 311 L781 333 L735 321 L708 303 Z"/>
+              <circle cx="765" cy="297" r="7"/>
+            </g>
+          </svg>
+
+          <div class="map-hint">Click a region to inspect its water-access story.</div>
+        </div>
+
+        <div class="region-info reveal delay-1" id="regionInfo">
+          <span class="info-label">SELECTED REGION</span>
+          <h3>India</h3>
+          <div class="big-stat">76.4<span>%</span></div>
+          <p>India's safely managed drinking-water coverage reported for 2024 in UNICEF India's summary of the latest JMP estimates.</p>
+          <div class="mini-facts">
+            <div><strong>2024</strong><span>reference year</span></div>
+            <div><strong>JMP</strong><span>monitoring framework</span></div>
+          </div>
+          <div class="info-note">Coverage statistics describe service levels; they do not mean every individual water point is automatically safe.</div>
+        </div>
+      </div>
+
+      <div class="planet-facts reveal">
+        <div class="fact-card">
+          <span>GLOBAL</span>
+          <strong>6 billion</strong>
+          <p>people used safely managed drinking-water services in 2022.</p>
+        </div>
+        <div class="fact-card">
+          <span>STILL WITHOUT</span>
+          <strong>2.2 billion</strong>
+          <p>people lacked safely managed drinking-water services in 2022.</p>
+        </div>
+        <div class="fact-card">
+          <span>CONTAMINATION</span>
+          <strong>1.7 billion+</strong>
+          <p>people used a source contaminated with faeces in 2022.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- WATER SOURCE EXPLORER -->
+    <section class="section light-section" id="sources">
+      <div class="section-heading reveal">
+        <div>
+          <span class="section-kicker">02 / SOURCE → TAP</span>
+          <h2>Where does your<br><em>water come from?</em></h2>
+        </div>
+        <p>
+          Different sources bring different risks. Treatment and protection
+          depend on what happens before water reaches the consumer.
+        </p>
+      </div>
+
+      <div class="source-explorer reveal">
+        <div class="source-tabs" role="tablist">
+          <button class="source-tab active" data-source="surface">River / Lake</button>
+          <button class="source-tab" data-source="ground">Groundwater</button>
+          <button class="source-tab" data-source="rain">Rainwater</button>
+          <button class="source-tab" data-source="reservoir">Reservoir</button>
+          <button class="source-tab" data-source="treated">Treated Supply</button>
+        </div>
+
+        <div class="source-content">
+          <div class="source-visual">
+            <div class="source-orb" id="sourceOrb">💧</div>
+            <div class="source-rings"></div>
+            <span id="sourceTag">SURFACE WATER</span>
+          </div>
+          <div class="source-copy">
+            <span class="info-label" id="sourceKicker">SOURCE 01</span>
+            <h3 id="sourceTitle">River & lake water</h3>
+            <p id="sourceDescription">Surface water can be affected by runoff, sewage, agricultural activity, microbes and other pollutants. Treatment and source protection are important before it becomes drinking water.</p>
+            <div class="source-grid">
+              <div><b>Common concern</b><span id="sourceRisk">Microbial contamination & runoff</span></div>
+              <div><b>Protection</b><span id="sourceTreatment">Source protection + treatment</span></div>
+            </div>
+            <div class="journey">
+              <span>Source</span><i>→</i><span>Collection</span><i>→</i><span>Treatment</span><i>→</i><span>Distribution</span><i>→</i><span>Tap</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WATER QUALITY LAB -->
+    <section class="section lab-section" id="lab">
+      <div class="section-heading reveal">
+        <div>
+          <span class="section-kicker">03 / INTERACTIVE LAB</span>
+          <h2>Test a water<br><em>sample.</em></h2>
+        </div>
+        <p>
+          A visual learning simulation — not a real laboratory test.
+          Select a sample and inspect the parameters one by one.
+        </p>
+      </div>
+
+      <div class="lab-wrap reveal">
+        <div class="sample-selector">
+          <span class="info-label">CHOOSE A DEMO SAMPLE</span>
+          <button class="sample-btn active" data-sample="treated">A • Treated supply</button>
+          <button class="sample-btn" data-sample="surface">B • Surface-water example</button>
+          <button class="sample-btn" data-sample="nitrate">C • Nitrate concern example</button>
+          <button class="sample-btn" data-sample="fluoride">D • Fluoride concern example</button>
+          <div class="lab-disclaimer">These values are fictional teaching examples designed to demonstrate how parameters are interpreted.</div>
+        </div>
+
+        <div class="lab-results">
+          <div class="lab-top">
+            <div>
+              <span class="info-label">CURRENT SAMPLE</span>
+              <h3 id="sampleName">Treated supply</h3>
+            </div>
+            <button class="test-btn" id="testBtn">Run analysis <span>→</span></button>
+          </div>
+
+          <div class="parameter-grid">
+            <article class="parameter">
+              <div class="param-head"><span>pH</span><span id="phStatus">context</span></div>
+              <strong id="phValue">7.2</strong>
+              <div class="meter"><i id="phMeter" style="width:72%"></i></div>
+              <p>Acidity/alkalinity indicator. Interpretation depends on the water system and applicable standard.</p>
+            </article>
+
+            <article class="parameter">
+              <div class="param-head"><span>Turbidity</span><span id="turbStatus">low</span></div>
+              <strong><span id="turbValue">0.7</span> <small>NTU*</small></strong>
+              <div class="meter"><i id="turbMeter" style="width:22%"></i></div>
+              <p>A measure of cloudiness caused by suspended particles. Lower turbidity is generally preferred.</p>
+            </article>
+
+            <article class="parameter">
+              <div class="param-head"><span>Nitrate</span><span id="nitrateStatus">below value</span></div>
+              <strong><span id="nitrateValue">18</span> <small>mg/L</small></strong>
+              <div class="meter"><i id="nitrateMeter" style="width:36%"></i></div>
+              <p>WHO guideline value for nitrate is 50 mg/L as nitrate ion.</p>
+            </article>
+
+            <article class="parameter">
+              <div class="param-head"><span>Fluoride</span><span id="fluorideStatus">below value</span></div>
+              <strong><span id="fluorideValue">0.7</span> <small>mg/L</small></strong>
+              <div class="meter"><i id="fluorideMeter" style="width:47%"></i></div>
+              <p>WHO guideline value for fluoride is 1.5 mg/L.</p>
+            </article>
+          </div>
+
+          <div class="lab-result-message" id="labMessage">
+            <span>✓</span>
+            <p><strong>Educational interpretation:</strong> this sample does not trigger the selected chemical examples above. Real drinking-water safety requires broader testing and risk management.</p>
+          </div>
+        </div>
+      </div>
+      <div class="footnote">*NTU = nephelometric turbidity unit. Values shown here are illustrative.</div>
+    </section>
+
+    <!-- RISKS -->
+    <section class="section section-dark" id="risks">
+      <div class="section-heading reveal">
+        <div>
+          <span class="section-kicker">04 / THE HUMAN FACTOR</span>
+          <h2>Small habits can create<br><em>big risks.</em></h2>
+        </div>
+        <p>
+          Water safety does not stop at treatment. Containers, hands,
+          taps and filling areas can all become part of the journey.
+        </p>
+      </div>
+
+      <div class="risk-grid">
+        <article class="risk-card reveal">
+          <div class="risk-number">01</div>
+          <div class="risk-icon">🧴</div>
+          <h3>Dirty bottles</h3>
+          <p>Reusable bottles need regular cleaning. Residues and moisture can support microbial growth.</p>
+          <span>→ CLEAN REGULARLY</span>
+        </article>
+        <article class="risk-card reveal delay-1">
+          <div class="risk-number">02</div>
+          <div class="risk-icon">🖐️</div>
+          <h3>Dirty hands</h3>
+          <p>Touching bottle openings, taps or dispensing points with unclean hands can introduce contamination.</p>
+          <span>→ WASH HANDS</span>
+        </article>
+        <article class="risk-card reveal delay-2">
+          <div class="risk-number">03</div>
+          <div class="risk-icon">🚰</div>
+          <h3>Unclean filling areas</h3>
+          <p>Dirty surfaces, standing water and damaged fixtures can turn a clean source into a hygiene concern.</p>
+          <span>→ KEEP AREAS CLEAN</span>
+        </article>
+        <article class="risk-card reveal delay-3">
+          <div class="risk-number">04</div>
+          <div class="risk-icon">🔄</div>
+          <h3>Sharing bottles</h3>
+          <p>Sharing personal drinking containers can increase the opportunity for transfer of microbes between people.</p>
+          <span>→ USE YOUR OWN</span>
+        </article>
+      </div>
+
+      <!-- SPOT THE RISK -->
+      <div class="game-section reveal">
+        <div class="game-heading">
+          <span class="section-kicker">INTERACTIVE MINI GAME</span>
+          <h3>Spot the Risk</h3>
+          <p>Look closely at this water station and <strong>tap anything that could make drinking water unsafe</strong>. 6 risks are hiding here, and a few things are actually fine.</p>
+        </div>
+
+        <div class="spot-board" id="spotBoard">
+          <button class="spot-item spot-sign" data-item="sign" aria-label="Station sign" style="--x:50%;--y:13%;--mx:50%;--my:9%">WATER<br>STATION</button>
+          <button class="spot-item spot-nozzle" data-item="nozzle" aria-label="Tap with a hand on the nozzle" style="--x:50%;--y:42%;--mx:50%;--my:33%"><span>🚰</span><span class="hand">🖐️</span></button>
+          <button class="spot-item" data-item="soap" aria-label="Soap" style="--x:69%;--y:38%;--mx:83%;--my:27%"><span>🧼</span></button>
+          <button class="spot-item spot-pipe" data-item="pipe" aria-label="Pipe on the wall" style="--x:24%;--y:50%;--mx:24%;--my:52%"><i></i><span>💧</span></button>
+          <button class="spot-item spot-bottle dirty" data-item="dirtyBottle" aria-label="Bottle on the floor" style="--x:39%;--y:64%;--mx:78%;--my:58%"><i></i></button>
+          <button class="spot-item spot-bottle" data-item="cleanBottle" aria-label="Capped bottle" style="--x:76%;--y:64%;--mx:15%;--my:30%"><i></i></button>
+          <button class="spot-item spot-bin" data-item="bin" aria-label="Waste bin" style="--x:90%;--y:77%;--mx:87%;--my:86%"><span>🗑️</span><span class="litter">🥤</span></button>
+          <button class="spot-item spot-puddle" data-item="puddle" aria-label="Floor puddle" style="--x:20%;--y:88%;--mx:22%;--my:86%"><i></i></button>
+          <button class="spot-item spot-grime" data-item="grime" aria-label="Floor patch" style="--x:58%;--y:88%;--mx:56%;--my:84%"><i></i><span>🪰</span></button>
+        </div>
+
+        <div class="spot-tracker" id="spotTracker"></div>
+
+        <div class="spot-result" id="spotResult" aria-live="polite">
+          <div class="spot-result-icon" id="spotIcon" aria-hidden="true">👆</div>
+          <div>
+            <span id="spotLabel"></span>
+            <h4 id="spotTitle"></h4>
+            <p id="spotWhy"></p>
+            <strong id="spotAction"></strong>
+          </div>
+        </div>
+
+        <div class="game-score">
+          <span>RISKS FOUND <strong id="riskScore">0</strong> / 6</span>
+          <span id="gameMessage">6 risks still hidden.</span>
+          <button id="resetGame" type="button">Reset</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- CAMPUS -->
+    <section class="section light-section" id="campus">
+      <div class="section-heading reveal">
+        <div>
+          <span class="section-kicker">05 / CAMPUS DEMO</span>
+          <h2>From awareness<br>to <em>action.</em></h2>
+        </div>
+        <p>
+          Imagine every drinking-water point on campus carrying a simple QR
+          code. Scan it, identify the location, and report a problem.
+        </p>
+      </div>
+
+      <div class="campus-layout reveal">
+        <div class="campus-map">
+          <p class="map-disclaimer">Illustrative campus map — for demonstration purposes only. Not the actual LPU campus map.</p>
+          <div class="map-title">LPU WATER-POINT NETWORK <span>DEMO MAP — NOT AN OFFICIAL CAMPUS MAP</span></div>
+          <div class="campus-road road-a"></div>
+          <div class="campus-road road-b"></div>
+          <div class="campus-block block-a">ACADEMIC<br>BLOCK</div>
+          <div class="campus-block block-b">LIBRARY</div>
+          <div class="campus-block block-c">HOSTEL ZONE</div>
+          <div class="campus-block block-d">SPORTS</div>
+          <div class="campus-block block-e">FOOD COURT</div>
+
+          <button class="water-point" style="left:25%;top:31%" data-point="W-01" data-name="Academic Block">01</button>
+          <button class="water-point" style="left:49%;top:25%" data-point="W-02" data-name="Central Library">02</button>
+          <button class="water-point" style="left:73%;top:34%" data-point="W-03" data-name="Hostel Zone A">03</button>
+          <button class="water-point" style="left:32%;top:59%" data-point="W-04" data-name="Food Court">04</button>
+          <button class="water-point" style="left:59%;top:55%" data-point="W-05" data-name="Sports Complex">05</button>
+          <button class="water-point" style="left:79%;top:70%" data-point="W-06" data-name="Main Gate">06</button>
+          <button class="water-point" style="left:18%;top:77%" data-point="W
